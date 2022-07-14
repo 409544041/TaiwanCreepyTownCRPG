@@ -11,7 +11,7 @@ Taiwan Creepy Town CRPG/[Ll]ogs/
 Taiwan Creepy Town CRPG/[Mm]emoryCaptures/
 
 # Asset meta data should only be ignored when the corresponding asset is also ignored
-!/[Aa]ssets/**/*.meta
+!Taiwan Creepy Town CRPG/[Aa]ssets/**/*.meta
 
 # Uncomment this line if you wish to ignore the asset store tools plugin
 # /[Aa]ssets/AssetStoreTools*
@@ -60,4 +60,22 @@ sysinfo.txt
 
 # Crashlytics generated file
 crashlytics-build.properties
+
+# Never ignore DLLs in the FMOD subfolder.
+!Taiwan Creepy Town CRPG/[Aa]ssets/Plugins/FMOD/**/lib/*
+
+# Don't ignore images and gizmos used by FMOD in the Unity Editor.
+!Taiwan Creepy Town CRPG/[Aa]ssets/Gizmos/FMOD/*
+!Taiwan Creepy Town CRPG/[Aa]ssets/Editor Default Resources/FMOD/*
+                    
+# Ignore the Cache folder since it is updated locally.
+Taiwan Creepy Town CRPG/[Aa]ssets/Plugins/FMOD/Cache/*
+                    
+# Ignore bank files in the StreamingAssets folder.
+Taiwan Creepy Town CRPG/[Aa]ssets/StreamingAssets/**/*.bank
+Taiwan Creepy Town CRPG/[Aa]ssets/StreamingAssets/**/*.bank.meta
+                    
+# If the source bank files are kept outside of the StreamingAssets folder then these can be ignored.
+# Log files can be ignored.
+fmod_editor.log
 
